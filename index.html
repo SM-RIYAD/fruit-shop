@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="./images/logo.png">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Fruit</title>
+    <title>Fruit Burst</title>
     <script>
         tailwind.config = {
             theme: {
@@ -30,7 +32,7 @@
 
 
         <div
-            class="navbar lg:pe-10 md:pe-10 pt-5 pb-5 bg-transparent md:text-white text-black lg:bg-primarybg md:bg-primarybg rounded-full">
+            class="navbar lg:pe-10 md:pe-10 pt-5 pb-5 bg-transparent md:text-black text-black lg:text-white lg:bg-primarybg  rounded-full">
             <div class="navbar-start hidden  lg:flex">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -46,7 +48,7 @@
 
                         <li><a>About us</a></li>
                         <li><a>Shop</a></li>
-                        <li><a>All fruitsss</a></li>
+                        <li><a>All fruits</a></li>
                     </ul>
                 </div>
                 <ul class="menu hidden md:flex menu-horizontal ">
@@ -54,49 +56,29 @@
 
                     <li><a>About us</a></li>
                     <li><a>Shop</a></li>
-                    <li><a>All fruitss</a></li>
+                    <li><a>All fruits</a></li>
                 </ul>
 
             </div>
 
-            <div class=" hidden  navbar-center justify-center  lg:flex">
-                <!-- <ul class="menu menu-horizontal px-1">
-                <li><a>Home</a></li>
-                 
-                  <li><a>About us</a></li>
-                  <li><a>Shop</a></li>
-                  <li><a>All fruitss</a></li>
-              </ul> -->
+            <div class=" hidden  navbar-center justify-center gap-2 lg:flex">
+              
 
                 <img src="images/logo.png" alt="" srcset="">
-                <p class=" text-white text-4xl">Fruitt burst</p>
+                <p class=" text-white text-4xl">Fruit Burst</p>
 
             </div>
             <div class=" navbar-start   lg:hidden">
-                <!-- <ul class="menu menu-horizontal px-1">
-                <li><a>Home</a></li>
-                 
-                  <li><a>About us</a></li>
-                  <li><a>Shop</a></li>
-                  <li><a>All fruitss</a></li>
-              </ul> -->
+            
 
                 <img src="images/logo.png" alt="" srcset="">
-                <p class=" md:text-white text-black text-xl">Fruit burst</p>
+                <p class="  text-black font-bold text-2xl md:text-4xl ps-2">Fruit Burst</p>
 
             </div>
-            <!-- <div class="  md:block  hidden lg:hidden">
-            <ul class="">  <li><a>Homee</a></li>
-
-                <li><a>About us</a></li>
-                <li><a>Shop</a></li>
-                <li><a>All fruitsss</a></li></ul>
-              
-
-            </div> -->
+           
             <div class="navbar-end  lg:hidden ">
                 <div class="dropdown relative">
-                    <label tabindex="0" class="btn btn-ghost md:hidden ms-4 lg:hidden">
+                    <label tabindex="0" class="btn btn-ghost  ms-4 lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -105,14 +87,26 @@
                     </label>
                     <ul tabindex="0"
                         class="menu absolute right-2 menu-sm text-start dropdown-content mt-3 z-[1] shadow bg-base-100 rounded-box w-50">
-                        <li><a>Homee</a></li>
+                        <li><a class="text-black text-center">Homee</a></li>
 
-                        <li><a>About us</a></li>
-                        <li><a>Shop</a></li>
-                        <li><a>All fruitsss</a></li>
+                        <li><a class="text-black">About us</a></li>
+                        <li><a class="text-black">Shop</a></li>
+                        <li><a class="text-black">All fruitsss</a></li>
+                        <li>   <div class="md:flex lg-flex hidden rounded-full border border-gray-300 m-1">
+                            <input type="text"
+                                class="flex-1 py-2 px-4 rounded-s-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                placeholder="Search..." />
+                            <button type="button" class="text-black py-2 px-4  bg-white  rounded-e-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                </svg>
+                            </button>
+                        </div></li>
                     </ul>
                 </div>
-                <ul class="menu hidden md:flex lg:flex menu-horizontal ">
+                <ul class="menu hidden md:hidden lg:flex menu-horizontal ">
                     <li><a>Home</a></li>
 
                     <li><a>About us</a></li>
@@ -124,8 +118,8 @@
             <div class="navbar-end hidden lg:flex md:hidden bg-primarybg ">
                 <div class="md:flex lg-flex hidden rounded-full border border-gray-300 m-1">
                     <input type="text"
-                        class="flex-1 py-2 px-4 rounded-s-full focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        placeholder="Search..." />
+                        class="flex-1 py-2 px-4 text-black rounded-s-full" 
+                        placeholder="Search here" />
                     <button type="button" class="text-black py-2 px-4  bg-white  rounded-e-full">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -569,10 +563,105 @@
         <div class="flex justify-center items-center">
             <button class="rounded bg-primarybg items-center h-[60px] w-[200px] justify-center font-bold text-white p-5 mb-10 text-base">Shop All</button>
         </div>
+         <!-- team section -->
 
+         <section class="md:container container lg:container lg:mx-auto px-5 lg:my-5  p-0 my-5 space-y-20 ">
+            <div class="hero min-h-screen " style="background-image: url(images/team.png);">
+                <div class="hero-overlay bg-opacity-60 brightness-50"></div>
+                <div class="hero-content text-center text-neutral-content w-full ">
+                  <div class="w-full lg:p-24 xl:p-24 space-y-10 p-5 border flex-col justify-center ">
+                    <h1 class="mb-5 text-5xl font-bold text-white">Meet the team </h1>
+                    <h1 class="mb-5  text-center">Contrary to popular belief, is not simply random text. It has roots in <br> a piece of classical 
+                        Latin literature from 45 BC, making it over 2000 years old</h1>
+                    <div class="grid lg:grid-cols-4 grid-cols-1  md:grid-cols-2 xl:grid-cols-4 space-y-10  gap-5  h-full w-full">
+<div class="flex-col flex justify-center items-center space-y-3 mt-10 ">  
+
+    <img class="" src="images/member1.png" alt="" srcset="">
+    <h1 class="  text-xl text-white">SM RIYAD</h1>
+    <p class="text-white">Fruit Experts</p>
+    <div class="flex gap-5">
+        <i class="fa fa-twitter" style="font-size:20px;color:#F85559"></i>
+        <i class="fa fa-facebook-square" style="font-size:20px;color:#F85559"></i>
+        
+        <i class="fa fa-linkedin" style="font-size:20px;color:#F85559"></i>
+    </div>
+</div>
+
+<div class="flex-col flex justify-center items-center space-y-3  ">  
+
+    <img class="" src="images/member2.png" alt="" srcset="">
+    <h1 class="  text-xl text-white">Safia Chowdhury</h1>
+    <p class="text-white">Fruit Experts</p>
+    <div class="flex gap-5">
+        <i class="fa fa-twitter" style="font-size:20px;color:#F85559"></i>
+        <i class="fa fa-facebook-square" style="font-size:20px;color:#F85559"></i>
+        
+        <i class="fa fa-linkedin" style="font-size:20px;color:#F85559"></i>
+    </div>
+</div>
+<div class="flex-col flex justify-center items-center space-y-3  ">  
+
+    <img class="" src="images/member3.png" alt="" srcset="">
+    <h1 class="  text-xl text-white">Asim Riyaz</h1>
+    <p class="text-white">Fruit Experts</p>
+    <div class="flex gap-5">
+        <i class="fa fa-twitter" style="font-size:20px;color:#F85559"></i>
+        <i class="fa fa-facebook-square" style="font-size:20px;color:#F85559"></i>
+        
+        <i class="fa fa-linkedin" style="font-size:20px;color:#F85559"></i>
+    </div>
+</div>
+<div class="flex-col flex justify-center items-center space-y-3  ">  
+
+    <img class="" src="images/member4.png" alt="" srcset="">
+    <h1 class="  text-xl text-white">Hina Khan</h1>
+    <p class="text-white">Fruit Experts</p>
+    <div class="flex gap-5">
+        <i class="fa fa-twitter" style="font-size:20px;color:#F85559"></i>
+        <i class="fa fa-facebook-square" style="font-size:20px;color:#F85559"></i>
+        
+        <i class="fa fa-linkedin" style="font-size:20px;color:#F85559"></i>
+    </div>
+</div>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+         </section>
 
     </main>
+   <footer class="footer mt-20 text-white bg-black footer-center px-10 py-20 bg-base-200 text-base rounded">
 
+
+    <div class="flex">
+        <img src="images/logo.png" alt="" srcset="">
+        <p class=" text-white text-2xl font-bold">Fruit burst</p>
+    </div>
+        <div class="grid lg:grid-cols-6 xl:grid-cols-6 md:grid-cols-6 grid-cols-3 lg:gap-10 xl:gap-10 gap-5">
+            <a class="link link-hover">Home</a> 
+            <a class="link link-hover">About us</a> 
+            <a class="link link-hover">Shop</a> 
+            <a class="link link-hover">Fruits</a>
+          <a class="link link-hover">Support</a> 
+          <a class="link link-hover">Account</a> 
+       
+        </div> 
+        <div>
+          <div class="grid md:grid-cols-6 lg:grid-cols-6 xl:grid-cols-6 gap-10 grid-cols-3">
+            <i class="fa fa-twitter" style="font-size:38px;color:white"></i>
+            <i class="fa fa-facebook-square" style="font-size:38px;color:white"></i>
+            <i class="fa fa-youtube-play" style="font-size:38px;color:white"></i>
+            <i class="fa fa-linkedin" style="font-size:38px;color:white"></i>
+            <i class="fa fa-instagram" style="font-size:38px;color:white"></i>
+            <i class="fa fa-apple" style="font-size:38px;color:white"></i>
+          </div>
+        </div> 
+      
+      </footer>
 </body>
 
 </html>
